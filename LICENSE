@@ -1,0 +1,23 @@
+MIT License
+
+Here is my awesome project
+<snippet>
+  <content><![CDATA[
+# ${1:SVG ICONS }
+TODO:DID STARTING with JAVA script and loved the way how websites can actually response
+
+## Usage
+TODO: base with html animations and poistioning with css and login click count with java script
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+
+## License
+TODO: MIT
+]]></content>
+  <tabTrigger>readme</tabTrigger>
+</snippet>
