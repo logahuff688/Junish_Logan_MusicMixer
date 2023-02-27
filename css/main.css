@@ -1,6 +1,7 @@
 body {
-  background-color: purple;
+  background-image: linear-gradient(to bottom right, purple, pink);
 }
+
 
 .header {
   background-color: black;
