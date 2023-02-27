@@ -5,7 +5,7 @@ const icons = document.querySelectorAll(".audioIcon");
 const titles = document.querySelectorAll(".title");
 
 // Define the sound effect to be played
-const soundEffect = new Audio("path/to/sound/effect.mp3");
+const soundEffect = new Audio("assets/fart.mp3");
 
 // Add event listeners to each icon
 icons.forEach(icon => {
@@ -33,6 +33,9 @@ titles.forEach(title => {
     soundEffect.play();
 
     console.log(`Icon ${iconId} dropped on ${title.innerText}`);
+    if (console.error) {
+        console.log("Error!");
+    }
   });
 });
 
