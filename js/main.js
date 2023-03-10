@@ -2,7 +2,9 @@
 const icons = document.querySelectorAll("#icon");
 
 // Get all the title elements
-const titles = document.querySelectorAll(".title");
+const boxes = document.querySelectorAll(".DragDropBox");
+const boxDefault = "images/box.png"
+const boxDragged = "images/boxDragged.png"
 
 // Define the sound effect to be played
 const soundEffect = new Audio("assets/disk.mp3");
@@ -16,14 +18,14 @@ icons.forEach(icon => {
 });
 
 // Add event listeners to each title
-titles.forEach(title => {
-  // When an icon is dragged over a title, prevent the default behavior
-  title.addEventListener("dragover", event => {
+boxes.forEach(box => {
+  // When an icon is dragged over a box, prevent the default behavior
+  box.addEventListener("dragover", event => {
     event.preventDefault();
   });
 
-  // When an icon is dropped on a title, play the sound effect
-  title.addEventListener("drop", event => {
+  // When an icon is dropped on a box, play the sound effect
+  box.addEventListener("drop", event => {
     event.preventDefault();
 
     // Get the ID of the dropped icon
@@ -31,8 +33,15 @@ titles.forEach(title => {
 
     // Play the sound effect
     soundEffect.play();
+  box.setAttribute("src", boxDragged);
+  setTimeout(() => {
+    box.setAttribute("src", boxDefault)
+  }, 620);
 
-    console.log(`Icon ${iconId} dropped on ${title.innerText}`);
+
+
+
+    console.log(`Icon ${iconId} dropped on ${box.innerText}`);
   });
 });
 
