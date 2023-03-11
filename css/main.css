@@ -138,8 +138,9 @@ margin-left: 37%;
 }
 
 .line{
+  margin-top: 115px;
   width: 3px;
-  height: 322%;
+  height: 307%;
   background-color: black;
   position: absolute;
   top: 50%;
