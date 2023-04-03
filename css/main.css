@@ -1,8 +1,8 @@
 body {
   margin-top: 3000px;
-  background-image: url("../images/Hexagon.png");
+  background-image: url("../images/Hexagon.svg"), url("../assets/bg.gif");
   background-size: 100%;
-  background-color: gray;
+  background-color: black;
   position: sticky;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -84,6 +84,12 @@ span{
 
 .audioIcon {
   display: block;
+}
+
+#Instruction1 {
+  color: black;
+  translate: 350px -2010px;
+  font-size: x-large;
 }
 
 #icon1 {
